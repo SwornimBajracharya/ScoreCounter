@@ -2,5 +2,10 @@
     <string name="app_name">My Application</string>
     <string name="Count">Count</string>
     <string name="Toast">Toast</string>
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="onePoint">+1Points</string>
+    <string name="twoPoint">+2Points</string>
+    <string name="threePoint">+3Points</string>
     <string name="ToastMessage">Toast Message: Value Reset! Showing "Hello World!"</string>
 </resources>

@@ -15,18 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mShowCount = (TextView) findViewById(R.id.TextBox);
         //This is a test text comment
     }
 
-    public void showToast(View view){
-        Toast toast = Toast.makeText(this, R.string.ToastMessage, Toast.LENGTH_SHORT);
-        mShowCount.setText("Hello World!");
-        toast.show();
-    }
-
-    public void countUp(View view){
-        count++;
-        mShowCount.setText(Integer.toString(count));
-    }
 }
