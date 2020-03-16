@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    //define variables
     private int countA=0;
     private int countB=0;
     private TextView ShowScoreA;
@@ -22,17 +24,18 @@ public class MainActivity extends AppCompatActivity {
         ShowScoreB = findViewById(R.id.ScoreB);
     }
 
+    //display score
     public void displayScoreForTeamA(int score){
         ShowScoreA.setText(String.valueOf(score));
     }
-
     public void displayScoreForTeamB(int score){
         ShowScoreB.setText(String.valueOf(score));
     }
 
+    //reset score for both team
     public void resetScore(View view) {
         countA = 0;
-        countA = 0;
+        countB = 0;
         displayScoreForTeamA(countA);
         displayScoreForTeamB(countB);
     }
@@ -52,22 +55,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void add3ForTeamB(View view) {
         countB += 3;
-        displayScoreForTeamA(countB);
+        displayScoreForTeamB(countB);
     }
     public void add2ForTeamB(View view) {
         countB += 2;
-        displayScoreForTeamA(countB);
+        displayScoreForTeamB(countB);
     }
     public void add1ForTeamB(View view) {
         countB += 1;
-        displayScoreForTeamA(countB);
+        displayScoreForTeamB(countB);
     }
-
-
-
-
-
-
-
 }
 

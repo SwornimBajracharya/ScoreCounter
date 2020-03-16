@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Welcome to ScoreBoard</string>
     <string name="Count">Count</string>
     <string name="Toast">Toast</string>
     <string name="TeamA">Team A</string>
