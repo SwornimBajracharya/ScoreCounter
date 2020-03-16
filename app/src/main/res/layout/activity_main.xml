@@ -1,95 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Welcome to ScoreBoard"
+        />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_weight="1"
-        android:layout_gravity=""
-        >
-        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Team A"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/ScoreA"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="40dp"
-            />
-        <Button
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/ScoreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/onePointA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add1ForTeamA"
+                android:text="@string/onePoint" />
+
+            <Button
+                android:id="@+id/twoPointA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add2ForTeamA"
+                android:text="@string/twoPoint" />
+
+            <Button
+                android:id="@+id/threePointA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add3ForTeamA"
+                android:text="@string/threePoint" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/onePointA"
-            android:text="@string/onePoint"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/twoPointA"
-            android:text="@string/twoPoint"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/threePointA"
-            android:text="@string/threePoint"
-            />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B" />
+
+            <TextView
+                android:id="@+id/ScoreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/onePointB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add1ForTeamB"
+                android:text="@string/onePoint" />
+
+            <Button
+                android:id="@+id/twoPointB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add2ForTeamB"
+                android:text="@string/twoPoint" />
+
+            <Button
+                android:id="@+id/threePointB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add3ForTeamB"
+                android:text="@string/threePoint" />
+        </LinearLayout>
     </LinearLayout>
 
-    <view
-        android:layout_width="1dp"
-        android:layout_height="match_parent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_weight="1"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Team B"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/ScoreB"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="40dp"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/onePointB"
-            android:text="@string/onePoint"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/twoPointB"
-            android:text="@string/twoPoint"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/threePointB"
-            android:text="@string/threePoint"
-            />
-    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
